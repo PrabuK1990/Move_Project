@@ -22,11 +22,21 @@ public class LoginPage {
 		
 		//Enter text in the email id field
 		move.findElement(By.id("contact_email")).sendKeys("dileep@gmail.com");
+		//Enter text in the password field
+		move.findElement(By.id("contact_password")).sendKeys("Dileep@12");
+		
+		//Click on login button
+		//move.select
 		
 		//Should close the Browser
-		//move.close();
+		move.close();
 		
-		System.out.println("Launch browser, maximize browser, enter url, close pop-up, enter email-id and close browser");
+		System.out.println("Launch browser, maximize browser, enter url, close pop-up, enter email-id, password and close browser");
+	}
+
+	private static void close() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
