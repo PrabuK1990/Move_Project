@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginPage {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		//Path setup for chromedriver executable file
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Downloads\\chromedriver_win32\\chromedriver.exe");
@@ -27,6 +27,9 @@ public class LoginPage {
 		
 		//Click on login button
 		//move.select
+		
+		//sleep time 
+	     move.wait(3);
 		
 		//Should close the Browser
 		move.close();
