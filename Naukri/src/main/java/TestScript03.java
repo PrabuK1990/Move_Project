@@ -1,5 +1,5 @@
 
-public class TestScript02 {
+public class TestScript03 {
 
 	public static void main(String[] args) {
 		
@@ -9,22 +9,21 @@ public class TestScript02 {
 		NaukariLogin naukri = new NaukariLogin();
 		
 		//Call function - setProperty(), chromeBrowser(), maximizeBrowser(), naukriUrl()
-		//naukriLoginLink, naukriEmail(), naukriPassword(), naukriLogin() and closeBrowser() 
+		//naukriLoginLink, naukriLoginButton(),  Validate email error message, validate password error message and closeBrowser()
+		
 		naukri.setPathChromeDriver();
 		naukri.chromeBrowser();
 		naukri.maximizeWindow();
 		naukri.naukriUrl();
 		naukri.naukriLoginLink();
 		naukri.waitElement();
-		naukri.naukriEmailField();
-		naukri.naurkiPasswordField();
 		naukri.naukriLoginButton();
 		naukri.waitElement();
-		naukri.naukriLoginErrMsg();
+		naukri.naukriEmailErrMsg();
+		naukri.naukriPasswordErrMsg();
 		naukri.closeAllBrowser();
 		
-		System.out.println("Login functionaly working as expected");
-
+		System.out.println("***Error Message Validation for Email ID and Password Completed***");
 	}
 
 }
