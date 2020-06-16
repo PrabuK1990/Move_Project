@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class NaukariLogin {
+public class NaukariLogin implements LoginPageInputs, LoginPageControls {
 	
 	//Set Path for chrome driver
 	public WebDriver move;
@@ -28,31 +28,31 @@ public class NaukariLogin {
 	//Enter Naukri Url
 	public void naukriUrl()
 	{
-		move.get("https://www.naukri.com/");
+		move.get(LoginPageInputs_Url);
 	}
 	
 	//Click Login Link
 	public void naukriLoginLink()
 	{
-		move.findElement(By.xpath("//div[text()='Login']")).click();
+		move.findElement(By.xpath(LoginPageControls_Login)).click();
 	}
 		
 	//Enter Naukri Username/Email
 	public void naukriEmailField()
 	{
-		move.findElement(By.xpath("//input[@placeholder='Enter your active Email ID / Username']")).sendKeys("dileep@gmail.com");	
+		move.findElement(By.xpath(LoginPageInputs_EmailID)).sendKeys(LoginPageInputs_EmailID);
 	}
 		
 	//Enter Naukri Password
 	public void naurkiPasswordField()
 	{
-		move.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys("Dileep@12");	
+		move.findElement(By.xpath(LoginPageInputs_Password)).sendKeys(LoginPageInputs_Password);	
 	}			
 		
 	//Click Login Button
-	public void naukriLoginButton()
+	public void naukriLoginButton() 
 	{
-		move.findElement(By.xpath("//button[text()='Login']")).click();
+		move.findElement(By.xpath(LoginPageControls_Login)).click();
 	}
 	
 	//Validate Credentials Error Message
@@ -62,14 +62,24 @@ public class NaukariLogin {
 		
 		String actualErrorMsgCombination = move.findElement(By.xpath("//div[@class='server-err']")).getText();
 		
-		if(expectedErrorMsgCombination.equals(actualErrorMsgCombination))
+		if (expectedErrorMsgCombination.equals(actualErrorMsgCombination))
 		{
-			System.out.println("Correct Error Message Displayed when Login button clicked after enetering invalid credentials");
+			//If expected is eaual to actual condition is true(Then the following code will execute othwise following code will not execute)
+			System.out.println("CORRECT COMBINATION ERROR MESSAGE");
+			System.out.println("------------------------------------------------------------------------------------------------------------------");
+			System.out.println("Expected Combination Error Message : " + expectedErrorMsgCombination);
+			System.out.println("Actual Combination Error Message : " + actualErrorMsgCombination);
+			System.out.println("------------------------------------------------------------------------------------------------------------------");
 		}
-		
-		else
+	
+		else 	
 		{
-			System.out.println("In Correct Error Message Displayed for Invalid Details");
+			//If expected is eaual to actual condition is false(Then the following code will execute)
+			System.out.println("INCORRECT COMBINATION ERROR MESSAGE");
+			System.out.println("------------------------------------------------------------------------------------------------------------------");
+			System.out.println("Expected Combination Error Message : " + expectedErrorMsgCombination);
+			System.out.println("Actual Combination Error Message : " + actualErrorMsgCombination);
+			System.out.println("------------------------------------------------------------------------------------------------------------------");
 		}
 	}
 	
