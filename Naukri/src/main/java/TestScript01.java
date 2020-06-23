@@ -6,7 +6,7 @@ public class TestScript01 {
 		System.out.println("Scenario 1 : To Verify the naukri Url");
 
 		//Create an instance of class "NaukriLoginPage" and store it in an object and name it as "naukri"
-		NaukariLogin naukri = new NaukariLogin();
+		NaukriLoginPageReusables naukri = new NaukriLoginPageReusables();
 
 		//Call function - setProperty(), chromeBrowser(), maximizeBrowser(), naukriUrl() and closeBrowser() 
 		naukri.setPathChromeDriver();

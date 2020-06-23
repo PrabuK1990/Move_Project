@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class NaukariLogin implements LoginPageInputs, LoginPageControls {
+public class NaukriLoginPageReusables implements LoginPageInputs, LoginPageControls {
 	
 	//Set Path for chrome driver
 	public WebDriver move;
@@ -34,40 +34,38 @@ public class NaukariLogin implements LoginPageInputs, LoginPageControls {
 	//Click Login Link
 	public void naukriLoginLink()
 	{
-		move.findElement(By.xpath(LoginPageControls_Login)).click();
+		move.findElement(By.xpath(LoginPageControls_LoginLink)).click();
 	}
 		
 	//Enter Naukri Username/Email
 	public void naukriEmailField()
 	{
-		move.findElement(By.xpath(LoginPageInputs_EmailID)).sendKeys(LoginPageInputs_EmailID);
+		move.findElement(By.xpath(LoginPageControls_EmailIDField)).sendKeys(LoginPageInputs_EmailID);
 	}
 		
 	//Enter Naukri Password
 	public void naurkiPasswordField()
 	{
-		move.findElement(By.xpath(LoginPageInputs_Password)).sendKeys(LoginPageInputs_Password);	
+		move.findElement(By.xpath(LoginPageControls_PasswordField)).sendKeys(LoginPageInputs_Password);	
 	}			
 		
 	//Click Login Button
 	public void naukriLoginButton() 
 	{
-		move.findElement(By.xpath(LoginPageControls_Login)).click();
+		move.findElement(By.xpath(LoginPageControls_LoginButton)).click();
 	}
 	
 	//Validate Credentials Error Message
 	public void naukriLoginErrMsg()
-	{
-		String expectedErrorMsgCombination = "Invalid details. Please check the Email ID - Password combination.";
+	{	
+		String actualErrorMsgCombination = move.findElement(By.xpath(LoginPageControls_NaukriLoginErrMsg)).getText();
 		
-		String actualErrorMsgCombination = move.findElement(By.xpath("//div[@class='server-err']")).getText();
-		
-		if (expectedErrorMsgCombination.equals(actualErrorMsgCombination))
+		if (LoginPageInputs_ExpectedErrorMsgCombination.equals(actualErrorMsgCombination))
 		{
 			//If expected is eaual to actual condition is true(Then the following code will execute othwise following code will not execute)
 			System.out.println("CORRECT COMBINATION ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
-			System.out.println("Expected Combination Error Message : " + expectedErrorMsgCombination);
+			System.out.println("Expecated Combination Error Message : " + LoginPageInputs_ExpectedErrorMsgCombination);
 			System.out.println("Actual Combination Error Message : " + actualErrorMsgCombination);
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 		}
@@ -77,7 +75,7 @@ public class NaukariLogin implements LoginPageInputs, LoginPageControls {
 			//If expected is eaual to actual condition is false(Then the following code will execute)
 			System.out.println("INCORRECT COMBINATION ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
-			System.out.println("Expected Combination Error Message : " + expectedErrorMsgCombination);
+			System.out.println("Expected Combination Error Message : " + LoginPageInputs_ExpectedErrorMsgCombination);
 			System.out.println("Actual Combination Error Message : " + actualErrorMsgCombination);
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 		}
@@ -87,16 +85,14 @@ public class NaukariLogin implements LoginPageInputs, LoginPageControls {
 	
 	public void naukriEmailErrMsg()
 	{
-		String  expectedErrorMsgEmailField = "Please enter your Email ID / Username";
+		String actualErrorMsgEmailField = move.findElement(By.xpath(LoginPageControls_naukriEmailErrMsg)).getText();
 		
-		String actualErrorMsgEmailField = move.findElement(By.xpath("//div[text()='Please enter your Email ID / Username']")).getText();
-		
-		if (expectedErrorMsgEmailField.equals(actualErrorMsgEmailField))
+		if (LoginPageInputs_ExpectedErrorMsgEmailField.equals(actualErrorMsgEmailField))
 		{
 			//If expected is eaual to actual condition is true(Then the following code will execute othwise following code will not execute)
 			System.out.println("CORRECT EMAIL ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
-			System.out.println("Expected Email Error Message : " + expectedErrorMsgEmailField);
+			System.out.println("Expected Email Error Message : " + LoginPageInputs_ExpectedErrorMsgEmailField);
 			System.out.println("Actual Email Error Message : " + actualErrorMsgEmailField);
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 		}
@@ -106,7 +102,7 @@ public class NaukariLogin implements LoginPageInputs, LoginPageControls {
 			//If expected is eaual to actual condition is false(Then the following code will execute)
 			System.out.println("INCORRECT EMAIL ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
-			System.out.println("Expected Email Error Message : " + expectedErrorMsgEmailField);
+			System.out.println("Expected Email Error Message : " + LoginPageInputs_ExpectedErrorMsgEmailField);
 			System.out.println("Actual Email Error Message : " + actualErrorMsgEmailField);
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 		}
@@ -117,15 +113,15 @@ public class NaukariLogin implements LoginPageInputs, LoginPageControls {
 	
 	public void naukriPasswordErrMsg()
 	{
-		String  expectedErrorMsgPasswordField = "Please enter your Password";
 		
-		String actualErrorMsgPasswordField = move.findElement(By.xpath("//div[text()='Please enter your Password']")).getText();
 		
-		if (expectedErrorMsgPasswordField.equals(actualErrorMsgPasswordField))
+		String actualErrorMsgPasswordField = move.findElement(By.xpath(LoginPageControls_naukriPasswordErrMsg)).getText();
+		
+		if (LoginPageInputs_ExpectedErrorMsgPasswordField.equals(actualErrorMsgPasswordField))
 		{
 			System.out.println("CORRECT PASSWORD ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
-			System.out.println("Expected Password Error Message : " + expectedErrorMsgPasswordField);
+			System.out.println("Expected Password Error Message : " + LoginPageInputs_ExpectedErrorMsgPasswordField);
 			System.out.println("Actual Password Error Message : " + actualErrorMsgPasswordField);
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 		}
@@ -134,7 +130,7 @@ public class NaukariLogin implements LoginPageInputs, LoginPageControls {
 		{
 			System.out.println("CORRECT PASSWORD ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
-			System.out.println("Expected Password Error Message : " + expectedErrorMsgPasswordField);
+			System.out.println("Expected Password Error Message : " + LoginPageInputs_ExpectedErrorMsgPasswordField);
 			System.out.println("Actual Password Error Message : " + actualErrorMsgPasswordField);
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 		}
