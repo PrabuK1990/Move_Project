@@ -19,6 +19,6 @@ public class Tasks {
 		//23-06-2020
 		//Task 1 : Complete TestScript01, TestScript02, TestScript03 and TestScript05  -- Completed
 		//Task 2 : Create Functions in NaukriHomePageReusables----partially complted
-		//Task 3 : Create NaukriSurveyPageReusables, NaukriSurveyPageControls and NaukriSurveyPageInputs class and create function for all fields
+		//Task 3 : Create NaukriSurveyPageReusables, NaukriSurveyPageControls and NaukriSurveyPageInputs class and create function for all fields------partially complted
 	} 
 }
