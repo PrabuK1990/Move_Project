@@ -2,67 +2,34 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class NaukriLoginPageReusables implements LoginPageInputs, LoginPageControls {
-	
-	//Set Path for chrome driver
-	public WebDriver move;
+public class NaukriLoginPageReusables extends ProjectReusables implements LoginPageInputs, LoginPageControls {
 		
-	//Path setup for chromedriver executable file
-	public void setPathChromeDriver()
-	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Downloads\\chromedriver_win32\\chromedriver.exe");
-	}
-	
-	//Launch Chrome Browser	
-	public void chromeBrowser()			
-	{				
-		move = new ChromeDriver();
-	}
-		
-	//Maximize Browser	
-	public void maximizeWindow()
-	{
-		move.manage().window().maximize();
-	}			
-		
-	//Enter Naukri Url
-	public void naukriUrl()
-	{
-		move.get(LoginPageInputs_Url);
-	}
-	
-	//Click Login Link
-	public void naukriLoginLink()
-	{
-		move.findElement(By.xpath(LoginPageControls_LoginLink)).click();
-	}
-		
-	//Enter Naukri Username/Email
+	//Enter Naukri Username/Email in Login Page
 	public void naukriEmailField()
 	{
-		move.findElement(By.xpath(LoginPageControls_EmailIDField)).sendKeys(LoginPageInputs_EmailID);
+		naukri.findElement(By.xpath(LoginPageControls_EmailIDField)).sendKeys(LoginPageInputs_EmailID);
 	}
 		
-	//Enter Naukri Password
+	//Enter Naukri Password in Login Page
 	public void naurkiPasswordField()
 	{
-		move.findElement(By.xpath(LoginPageControls_PasswordField)).sendKeys(LoginPageInputs_Password);	
+		naukri.findElement(By.xpath(LoginPageControls_PasswordField)).sendKeys(LoginPageInputs_Password);	
 	}			
 		
-	//Click Login Button
+	//Click Login Button in Login Page
 	public void naukriLoginButton() 
 	{
-		move.findElement(By.xpath(LoginPageControls_LoginButton)).click();
+		naukri.findElement(By.xpath(LoginPageControls_LoginButton)).click();
 	}
 	
-	//Validate Credentials Error Message
+	//Validate Credentials Error Message in Login Page
 	public void naukriLoginErrMsg()
 	{	
-		String actualErrorMsgCombination = move.findElement(By.xpath(LoginPageControls_NaukriLoginErrMsg)).getText();
+		String actualErrorMsgCombination = naukri.findElement(By.xpath(LoginPageControls_NaukriLoginErrMsg)).getText();
 		
 		if (LoginPageInputs_ExpectedErrorMsgCombination.equals(actualErrorMsgCombination))
 		{
-			//If expected is eaual to actual condition is true(Then the following code will execute othwise following code will not execute)
+			//If expected is eaual to actual condition is true(Then the following code will execute othwise following code will not execute) in Login Page
 			System.out.println("CORRECT COMBINATION ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 			System.out.println("Expecated Combination Error Message : " + LoginPageInputs_ExpectedErrorMsgCombination);
@@ -72,7 +39,7 @@ public class NaukriLoginPageReusables implements LoginPageInputs, LoginPageContr
 	
 		else 	
 		{
-			//If expected is eaual to actual condition is false(Then the following code will execute)
+			//If expected is eaual to actual condition is false(Then the following code will execute) in Login Page
 			System.out.println("INCORRECT COMBINATION ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 			System.out.println("Expected Combination Error Message : " + LoginPageInputs_ExpectedErrorMsgCombination);
@@ -81,15 +48,15 @@ public class NaukriLoginPageReusables implements LoginPageInputs, LoginPageContr
 		}
 	}
 	
-	//Validate Email error message
+	//Validate Email error message in Login Page
 	
 	public void naukriEmailErrMsg()
 	{
-		String actualErrorMsgEmailField = move.findElement(By.xpath(LoginPageControls_naukriEmailErrMsg)).getText();
+		String actualErrorMsgEmailField = naukri.findElement(By.xpath(LoginPageControls_naukriEmailErrMsg)).getText();
 		
 		if (LoginPageInputs_ExpectedErrorMsgEmailField.equals(actualErrorMsgEmailField))
-		{
-			//If expected is eaual to actual condition is true(Then the following code will execute othwise following code will not execute)
+		{ 
+			//If expected is eaual to actual condition is true(Then the following code will execute othwise following code will not execute) in Login Page
 			System.out.println("CORRECT EMAIL ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 			System.out.println("Expected Email Error Message : " + LoginPageInputs_ExpectedErrorMsgEmailField);
@@ -99,7 +66,7 @@ public class NaukriLoginPageReusables implements LoginPageInputs, LoginPageContr
 	
 		else 	
 		{
-			//If expected is eaual to actual condition is false(Then the following code will execute)
+			//If expected is eaual to actual condition is false(Then the following code will execute) in Login Page
 			System.out.println("INCORRECT EMAIL ERROR MESSAGE");
 			System.out.println("------------------------------------------------------------------------------------------------------------------");
 			System.out.println("Expected Email Error Message : " + LoginPageInputs_ExpectedErrorMsgEmailField);
@@ -109,13 +76,13 @@ public class NaukriLoginPageReusables implements LoginPageInputs, LoginPageContr
 			
 	}
 		
-	//Validate Password error message
+	//Validate Password error message in Login Page
 	
 	public void naukriPasswordErrMsg()
 	{
 		
 		
-		String actualErrorMsgPasswordField = move.findElement(By.xpath(LoginPageControls_naukriPasswordErrMsg)).getText();
+		String actualErrorMsgPasswordField = naukri.findElement(By.xpath(LoginPageControls_naukriPasswordErrMsg)).getText();
 		
 		if (LoginPageInputs_ExpectedErrorMsgPasswordField.equals(actualErrorMsgPasswordField))
 		{
@@ -136,27 +103,5 @@ public class NaukriLoginPageReusables implements LoginPageInputs, LoginPageContr
 		}
 			
 	}
-		
-	//Close Browser
-	public void closeBrowser()
-	{
-		move.close();
-	}
-	
-	//Close All Browser Instance Opened
-	public void closeAllBrowser()
-	{
-		move.quit();
-	}
-	
-	//Wait for Element to be displayed
-	public void waitElement()
-	{
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+
 }

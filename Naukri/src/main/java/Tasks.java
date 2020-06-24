@@ -8,12 +8,17 @@ public class Tasks {
 		//Task 2: Keep naukriEmailErrMsg and naukriPasswordErrMsg expected results in Inputs - Completed
 		//Task 3: Create NaukriHomePageReusbales, NaukriHomePageInputs and NaukriHomePageControls - Completed
 		//Task 4: Write Xpath for Name, Email ID, Create Password, Mobile Number, Years, Months, Upload, Register button - NaukriHomePageControls - Partial
+		//Skiped  Experienced years and upload resume
 		//Task 5: Keep Inputs for Name, Email ID, Create Password, Mobile Number, Years, Months, Upload, Register button - NaukriHomePageInputs - Partial
 		//Task 6: Create function for Name, Email ID, Create Password, Mobile Number, Years, Months, Upload, Register button - NaukriHomePageReusbales -Partial
-		//Task 7: Create TestScript04 and TestScript05
+		//Task 7: Create TestScript04 and TestScript05 - Completed
 		
 		
 		//Xpath for register for free : "//label[contains(text(), 'Upload CV')]/ancestor::div[1]/preceding-sibling::div[1]/button"
-	}
-//  skiped  Experienced years and upload resume 
+		
+		//23-06-2020
+		//Task 1 : Complete TestScript01, TestScript02, TestScript03 and TestScript05  -- Completed
+		//Task 2 : Create Functions in NaukriHomePageReusables----partially complted
+		//Task 3 : Create NaukriSurveyPageReusables, NaukriSurveyPageControls and NaukriSurveyPageInputs class and create function for all fields
+	} 
 }

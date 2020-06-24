@@ -3,10 +3,17 @@ public class TestScript03 {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Scenario 1 : To Verify the Naukri Login Functionality");
+		System.out.println("Scenario 3 : To Verify the Naukri Login Functionality");
 		
-		//Create an instance of class "NaukriLoginPage" and store it in an object and name it as "naukri"
-		NaukriLoginPageReusables naukri = new NaukriLoginPageReusables();
+
+		//Create Instance ProjectReusables
+		//Create Instance NaukriHomePgaeReusables
+		//Create Instance NaukriLoginPageReusables
+		
+		ProjectReusables naukri = new ProjectReusables();
+		NaukriHomePageReusbales naukriHomePage =  new NaukriHomePageReusbales();
+		NaukriLoginPageReusables naukriLoginPage = new NaukriLoginPageReusables();		
+				
 		
 		//Call function - setProperty(), chromeBrowser(), maximizeBrowser(), naukriUrl()
 		//naukriLoginLink, naukriLoginButton(),  Validate email error message, validate password error message and closeBrowser()
@@ -15,12 +22,12 @@ public class TestScript03 {
 		naukri.chromeBrowser();
 		naukri.maximizeWindow();
 		naukri.naukriUrl();
-		naukri.naukriLoginLink();
 		naukri.waitElement();
-		naukri.naukriLoginButton();
+		naukriHomePage.naukriLoginLink();
 		naukri.waitElement();
-		naukri.naukriEmailErrMsg();
-		naukri.naukriPasswordErrMsg();
+		naukriLoginPage.naukriLoginButton();
+		naukriLoginPage.naukriEmailErrMsg();
+		naukriLoginPage.naukriPasswordErrMsg();
 		naukri.closeAllBrowser();
 		
 		System.out.println("***Error Message Validation for Email ID and Password Completed***");
