@@ -7,5 +7,5 @@ public interface NaukriHomePageInputs {
 	public static String HomePageInputs_PasswordField = "Dileep235";
 	public static String HomePageInputs_MobileNumber = "9916599676" ;
 	public static String HomePageInputs_ExpectedAlertMessage = "An initiative to advance the career of job seekers during the COVID-19 pandemic";
-
+    public static String HomePageInputs_ExpectedMessage= "Find A Job at India's No.1 Job Site";
 }

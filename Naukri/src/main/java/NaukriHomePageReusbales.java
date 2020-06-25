@@ -35,6 +35,32 @@ public class NaukriHomePageReusbales extends ProjectReusables implements NaukriH
 	{
 		naukri.findElement(By.xpath(HomePageControls_CareerButtonLink)).click();
 	}
+	//Read/Validate/Verify India's NO1 Job Site
+	public void naukriNumberOneJobSite()
+	{
+		naukri.findElement(By.xpath("//Read/Validate/Verify Alert Message in Home Page")).getText();
+		
+		String actualMessage = null;
+		if(HomePageInputs_ExpectedMessage.equals(actualMessage))
+		{
+			//If expected is eaual to actual condition is true(Then the following code will execute othwise following code will not execute) in Login Page
+			System.out.println("CORRECT ALERT MESSAGE");
+			System.out.println("------------------------------------------------------------------------------------------------------------------");
+			System.out.println("Expecated Alert Message : " + HomePageInputs_ExpectedMessage);
+			System.out.println("Actual Alert Message : " + actualMessage);
+			System.out.println("------------------------------------------------------------------------------------------------------------------");
+		}
+		
+		else 	
+		{
+			//If expected is eaual to actual condition is false(Then the following code will execute) in Login Page
+			System.out.println("INCORRECT ALERT MESSAGE");
+			System.out.println("------------------------------------------------------------------------------------------------------------------");
+			System.out.println("Expected Alert Message : " + HomePageInputs_ExpectedMessage);
+			System.out.println("Actual Alert Message : " + actualMessage);
+			System.out.println("------------------------------------------------------------------------------------------------------------------");
+		}
+	}
 	
 	//Click Jobs Link in Home Page
 	public void naukriJobsLink()
