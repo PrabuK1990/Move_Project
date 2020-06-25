@@ -9,7 +9,7 @@ public class ProjectReusables implements LoginPageInputs, LoginPageControls, Nau
 	//Path setup for chromedriver executable file
 	public void setPathChromeDriver()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
 	}
 	
 	//Launch Chrome Browser	

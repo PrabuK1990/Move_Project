@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52" started-at="2020-06-25T04:41:33Z" finished-at="2020-06-25T04:41:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52" started-at="2020-06-25T04:41:33Z" finished-at="2020-06-25T04:41:33Z">
+      <class name="TS_02">
+        <test-method status="PASS" signature="instance()[pri:0, instance:TS_02@51081592]" name="instance" is-config="true" duration-ms="11" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instance -->
+        <test-method status="PASS" signature="instanceCreation()[pri:0, instance:TS_02@51081592]" name="instanceCreation" is-config="true" duration-ms="0" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instanceCreation -->
+        <test-method status="PASS" signature="loginFunctionality()[pri:1, instance:TS_02@51081592]" name="loginFunctionality" duration-ms="7" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFunctionality -->
+        <test-method status="PASS" signature="instances()[pri:0, instance:TS_02@51081592]" name="instances" is-config="true" duration-ms="1" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instances -->
+        <test-method status="PASS" signature="instanceCreation()[pri:0, instance:TS_02@51081592]" name="instanceCreation" is-config="true" duration-ms="1" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instanceCreation -->
+        <test-method status="PASS" signature="login()[pri:2, instance:TS_02@51081592]" name="login" duration-ms="3" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="instances()[pri:0, instance:TS_02@51081592]" name="instances" is-config="true" duration-ms="0" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instances -->
+        <test-method status="PASS" signature="last()[pri:0, instance:TS_02@51081592]" name="last" is-config="true" duration-ms="1" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- last -->
+      </class> <!-- TS_02 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
