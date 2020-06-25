@@ -21,7 +21,7 @@ public class Tasks {
 		//Task 2 : Create Functions in NaukriHomePageReusables----partially complted
 		//Task 3 : Create NaukriSurveyPageReusables, NaukriSurveyPageControls and NaukriSurveyPageInputs class and create function for all fields------partially complted
 		
-		//25-6-2020
+		//25-6-2020  
 		//Task 1 : Keep NaukriHomePageReusables locators in NaukriHomePageControls
 		//Task 2 : Create function for setPropertyFirefoxBrowser and launchfirefixBrowser
 		

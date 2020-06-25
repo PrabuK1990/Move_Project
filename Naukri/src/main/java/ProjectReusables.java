@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ProjectReusables implements LoginPageInputs, LoginPageControls, NaukriHomePageInputs, NaukriHomePageControls{
 	
@@ -11,13 +12,19 @@ public class ProjectReusables implements LoginPageInputs, LoginPageControls, Nau
 	{
 		System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
 	}
-	
+	public void setPropertyFirefoxBrowser()
+	{
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Dell\\Downloads\\geckodriver-v0.26.0-win64\\geckodriver.exe");
+	}
 	//Launch Chrome Browser	
 	public void chromeBrowser()			
 	{				
 		naukri = new ChromeDriver();
 	}
-		
+	public void FirefoxBrowser()
+	{
+	   naukri = new FirefoxDriver();
+	}
 	//Maximize Browser	
 	public void maximizeWindow()
 	{

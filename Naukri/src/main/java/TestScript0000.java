@@ -6,9 +6,9 @@ public class TestScript0000 {
 		
 		NaukriHomePageReusbales naukri = new NaukriHomePageReusbales();
 				
-				naukri.setPathChromeDriver();
-				naukri.chromeBrowser();
-				naukri.maximizeWindow();
+			    naukri.setPropertyFirefoxBrowser();
+			    naukri.FirefoxBrowser();
+			    naukri.maximizeWindow();
 				naukri.naukriUrl();
 				naukri.waitElement();
 				naukri.naukriJobsLink();
