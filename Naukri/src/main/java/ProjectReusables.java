@@ -12,24 +12,36 @@ public class ProjectReusables implements LoginPageInputs, LoginPageControls, Nau
 	{
 		System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
 	}
+	
+	//Path setup for firefox executable file
 	public void setPropertyFirefoxBrowser()
 	{
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Dell\\Downloads\\geckodriver-v0.26.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "src\\main\\resources\\geckodriver.exe");
 	}
+	
 	//Launch Chrome Browser	
 	public void chromeBrowser()			
 	{				
 		naukri = new ChromeDriver();
 	}
+	
+	//Launch Firefox Browser
 	public void FirefoxBrowser()
 	{
 	   naukri = new FirefoxDriver();
 	}
+	
 	//Maximize Browser	
 	public void maximizeWindow()
 	{
 		naukri.manage().window().maximize();
-	}			
+	}	
+	
+	//Refresh Browser	
+	public void refreshBrowser()
+	{
+		naukri.navigate().refresh();
+	}
 		
 	//Enter Naukri Url
 	public void naukriUrl()

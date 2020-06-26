@@ -22,8 +22,12 @@ public class Tasks {
 		//Task 3 : Create NaukriSurveyPageReusables, NaukriSurveyPageControls and NaukriSurveyPageInputs class and create function for all fields------partially complted
 		
 		//25-6-2020  
-		//Task 1 : Keep NaukriHomePageReusables locators in NaukriHomePageControls
-		//Task 2 : Create function for setPropertyFirefoxBrowser and launchfirefixBrowser
+		//Task 1 : Keep NaukriHomePageReusables locators in NaukriHomePageControls - Compleated
+		//Task 2 : Create function for setPropertyFirefoxBrowser and launchfirefoxBrowser - COmpleted
+		
+		//26-06-2020
+		//Add Test case 04, 05 & 06 to Test Suite----completed
+		//Place Firefox Driver in resorces project folder---completed
 		
 	} 
 }

@@ -10,13 +10,12 @@ public class TestScript06 {
 		naukri.maximizeWindow();
 		naukri.naukriUrl();
 		naukri.waitElement();
-		//naukriHomePage.naukriNumberOneJobSite();
+		naukriHomePage.naukriNumberOneJobSite();
 		naukriHomePage.naukriDesignationText();
 		naukriHomePage.naukriLocationText();
 		naukriHomePage.naukriSearchButtonLink();
 		naukri.waitElement();
 		naukri.closeAllBrowser();
-		
 
 	}
 

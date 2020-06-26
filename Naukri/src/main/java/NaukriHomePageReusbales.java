@@ -7,7 +7,7 @@ public class NaukriHomePageReusbales extends ProjectReusables implements NaukriH
 	//Read/Validate/Verify Alert Message in Home Page
 	public void naukriAlertMessage()
 	{
-		String actualAlterMessage = naukri.findElement(By.xpath("//span[@class='_stepUpHeaderTitle']")).getText();
+		String actualAlterMessage = naukri.findElement(By.xpath(HomePageControls_AlertMessage)).getText();
 		
 		if(HomePageInputs_ExpectedAlertMessage.equals(actualAlterMessage))
 		{
@@ -35,12 +35,12 @@ public class NaukriHomePageReusbales extends ProjectReusables implements NaukriH
 	{
 		naukri.findElement(By.xpath(HomePageControls_CareerButtonLink)).click();
 	}
+	
 	//Read/Validate/Verify India's NO1 Job Site
 	public void naukriNumberOneJobSite()
 	{
-		naukri.findElement(By.xpath("//Read/Validate/Verify Alert Message in Home Page")).getText();
+		String actualMessage = naukri.findElement(By.xpath("//h1[@class='inline']")).getText();
 		
-		String actualMessage = null;
 		if(HomePageInputs_ExpectedMessage.equals(actualMessage))
 		{
 			//If expected is eaual to actual condition is true(Then the following code will execute othwise following code will not execute) in Login Page

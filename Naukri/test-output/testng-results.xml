@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52" started-at="2020-06-25T04:41:33Z" finished-at="2020-06-25T04:41:33Z">
+  <suite name="Default suite" duration-ms="55478" started-at="2020-06-26T09:03:51Z" finished-at="2020-06-26T09:04:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52" started-at="2020-06-25T04:41:33Z" finished-at="2020-06-25T04:41:33Z">
-      <class name="TS_02">
-        <test-method status="PASS" signature="instance()[pri:0, instance:TS_02@51081592]" name="instance" is-config="true" duration-ms="11" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+    <test name="Default test" duration-ms="55478" started-at="2020-06-26T09:03:51Z" finished-at="2020-06-26T09:04:46Z">
+      <class name="TestSuite01">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestSuite01@51081592]" name="beforeTest" is-config="true" duration-ms="6798" started-at="2020-06-26T14:33:51Z" finished-at="2020-06-26T14:33:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- instance -->
-        <test-method status="PASS" signature="instanceCreation()[pri:0, instance:TS_02@51081592]" name="instanceCreation" is-config="true" duration-ms="0" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@51081592]" name="beforeMethod" is-config="true" duration-ms="7667" started-at="2020-06-26T14:33:58Z" finished-at="2020-06-26T14:34:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- instanceCreation -->
-        <test-method status="PASS" signature="loginFunctionality()[pri:1, instance:TS_02@51081592]" name="loginFunctionality" duration-ms="7" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCase04()[pri:4, instance:TestSuite01@51081592]" name="testCase04" duration-ms="8960" started-at="2020-06-26T14:34:05Z" finished-at="2020-06-26T14:34:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFunctionality -->
-        <test-method status="PASS" signature="instances()[pri:0, instance:TS_02@51081592]" name="instances" is-config="true" duration-ms="1" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+        </test-method> <!-- testCase04 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@51081592]" name="afterMethod" is-config="true" duration-ms="4089" started-at="2020-06-26T14:34:14Z" finished-at="2020-06-26T14:34:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- instances -->
-        <test-method status="PASS" signature="instanceCreation()[pri:0, instance:TS_02@51081592]" name="instanceCreation" is-config="true" duration-ms="1" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@51081592]" name="beforeMethod" is-config="true" duration-ms="4706" started-at="2020-06-26T14:34:18Z" finished-at="2020-06-26T14:34:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- instanceCreation -->
-        <test-method status="PASS" signature="login()[pri:2, instance:TS_02@51081592]" name="login" duration-ms="3" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCase05()[pri:5, instance:TestSuite01@51081592]" name="testCase05" duration-ms="7820" started-at="2020-06-26T14:34:23Z" finished-at="2020-06-26T14:34:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="instances()[pri:0, instance:TS_02@51081592]" name="instances" is-config="true" duration-ms="0" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+        </test-method> <!-- testCase05 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@51081592]" name="afterMethod" is-config="true" duration-ms="4147" started-at="2020-06-26T14:34:31Z" finished-at="2020-06-26T14:34:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- instances -->
-        <test-method status="PASS" signature="last()[pri:0, instance:TS_02@51081592]" name="last" is-config="true" duration-ms="1" started-at="2020-06-25T10:11:33Z" finished-at="2020-06-25T10:11:33Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@51081592]" name="beforeMethod" is-config="true" duration-ms="5073" started-at="2020-06-26T14:34:35Z" finished-at="2020-06-26T14:34:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- last -->
-      </class> <!-- TS_02 -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCase06()[pri:6, instance:TestSuite01@51081592]" name="testCase06" duration-ms="652" started-at="2020-06-26T14:34:40Z" finished-at="2020-06-26T14:34:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase06 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@51081592]" name="afterMethod" is-config="true" duration-ms="4749" started-at="2020-06-26T14:34:41Z" finished-at="2020-06-26T14:34:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestSuite01@51081592]" name="afterTest" is-config="true" duration-ms="782" started-at="2020-06-26T14:34:45Z" finished-at="2020-06-26T14:34:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- TestSuite01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
