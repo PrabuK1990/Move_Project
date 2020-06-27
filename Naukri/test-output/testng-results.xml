@@ -1,53 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55478" started-at="2020-06-26T09:03:51Z" finished-at="2020-06-26T09:04:46Z">
+  <suite name="Default suite" duration-ms="86691" started-at="2020-06-27T11:38:55Z" finished-at="2020-06-27T11:40:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55478" started-at="2020-06-26T09:03:51Z" finished-at="2020-06-26T09:04:46Z">
+    <test name="Default test" duration-ms="86691" started-at="2020-06-27T11:38:55Z" finished-at="2020-06-27T11:40:22Z">
       <class name="TestSuite01">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestSuite01@51081592]" name="beforeTest" is-config="true" duration-ms="6798" started-at="2020-06-26T14:33:51Z" finished-at="2020-06-26T14:33:58Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestSuite01@20e2cbe0]" name="beforeTest" is-config="true" duration-ms="7515" started-at="2020-06-27T17:08:55Z" finished-at="2020-06-27T17:09:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@51081592]" name="beforeMethod" is-config="true" duration-ms="7667" started-at="2020-06-26T14:33:58Z" finished-at="2020-06-26T14:34:05Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="beforeMethod" is-config="true" duration-ms="8528" started-at="2020-06-27T17:09:02Z" finished-at="2020-06-27T17:09:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase04()[pri:4, instance:TestSuite01@51081592]" name="testCase04" duration-ms="8960" started-at="2020-06-26T14:34:05Z" finished-at="2020-06-26T14:34:14Z">
+        <test-method status="PASS" signature="testCase01()[pri:1, instance:TestSuite01@20e2cbe0]" name="testCase01" duration-ms="8" started-at="2020-06-27T17:09:11Z" finished-at="2020-06-27T17:09:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase01 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="afterMethod" is-config="true" duration-ms="4167" started-at="2020-06-27T17:09:11Z" finished-at="2020-06-27T17:09:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="beforeMethod" is-config="true" duration-ms="4008" started-at="2020-06-27T17:09:15Z" finished-at="2020-06-27T17:09:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCase02()[pri:2, instance:TestSuite01@20e2cbe0]" name="testCase02" duration-ms="3710" started-at="2020-06-27T17:09:19Z" finished-at="2020-06-27T17:09:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase02 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="afterMethod" is-config="true" duration-ms="4087" started-at="2020-06-27T17:09:23Z" finished-at="2020-06-27T17:09:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="beforeMethod" is-config="true" duration-ms="4270" started-at="2020-06-27T17:09:27Z" finished-at="2020-06-27T17:09:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCase03()[pri:3, instance:TestSuite01@20e2cbe0]" name="testCase03" duration-ms="3355" started-at="2020-06-27T17:09:31Z" finished-at="2020-06-27T17:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase03 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="afterMethod" is-config="true" duration-ms="4095" started-at="2020-06-27T17:09:35Z" finished-at="2020-06-27T17:09:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="beforeMethod" is-config="true" duration-ms="4025" started-at="2020-06-27T17:09:39Z" finished-at="2020-06-27T17:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCase04()[pri:4, instance:TestSuite01@20e2cbe0]" name="testCase04" duration-ms="8407" started-at="2020-06-27T17:09:43Z" finished-at="2020-06-27T17:09:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase04 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@51081592]" name="afterMethod" is-config="true" duration-ms="4089" started-at="2020-06-26T14:34:14Z" finished-at="2020-06-26T14:34:18Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="afterMethod" is-config="true" duration-ms="4008" started-at="2020-06-27T17:09:51Z" finished-at="2020-06-27T17:09:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@51081592]" name="beforeMethod" is-config="true" duration-ms="4706" started-at="2020-06-26T14:34:18Z" finished-at="2020-06-26T14:34:23Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="beforeMethod" is-config="true" duration-ms="4845" started-at="2020-06-27T17:09:55Z" finished-at="2020-06-27T17:10:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase05()[pri:5, instance:TestSuite01@51081592]" name="testCase05" duration-ms="7820" started-at="2020-06-26T14:34:23Z" finished-at="2020-06-26T14:34:31Z">
+        <test-method status="PASS" signature="testCase05()[pri:5, instance:TestSuite01@20e2cbe0]" name="testCase05" duration-ms="7964" started-at="2020-06-27T17:10:00Z" finished-at="2020-06-27T17:10:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@51081592]" name="afterMethod" is-config="true" duration-ms="4147" started-at="2020-06-26T14:34:31Z" finished-at="2020-06-26T14:34:35Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="afterMethod" is-config="true" duration-ms="3921" started-at="2020-06-27T17:10:08Z" finished-at="2020-06-27T17:10:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@51081592]" name="beforeMethod" is-config="true" duration-ms="5073" started-at="2020-06-26T14:34:35Z" finished-at="2020-06-26T14:34:40Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="beforeMethod" is-config="true" duration-ms="3982" started-at="2020-06-27T17:10:12Z" finished-at="2020-06-27T17:10:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase06()[pri:6, instance:TestSuite01@51081592]" name="testCase06" duration-ms="652" started-at="2020-06-26T14:34:40Z" finished-at="2020-06-26T14:34:41Z">
+        <test-method status="PASS" signature="testCase06()[pri:6, instance:TestSuite01@20e2cbe0]" name="testCase06" duration-ms="647" started-at="2020-06-27T17:10:16Z" finished-at="2020-06-27T17:10:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase06 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@51081592]" name="afterMethod" is-config="true" duration-ms="4749" started-at="2020-06-26T14:34:41Z" finished-at="2020-06-26T14:34:45Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite01@20e2cbe0]" name="afterMethod" is-config="true" duration-ms="4267" started-at="2020-06-27T17:10:16Z" finished-at="2020-06-27T17:10:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestSuite01@51081592]" name="afterTest" is-config="true" duration-ms="782" started-at="2020-06-26T14:34:45Z" finished-at="2020-06-26T14:34:46Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestSuite01@20e2cbe0]" name="afterTest" is-config="true" duration-ms="846" started-at="2020-06-27T17:10:21Z" finished-at="2020-06-27T17:10:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

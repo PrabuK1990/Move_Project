@@ -2,7 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class ProjectReusables implements LoginPageInputs, LoginPageControls, NaukriHomePageInputs, NaukriHomePageControls{
+public class ProjectReusables extends LoginPageInputs implements LoginPageControls, NaukriHomePageInputs, NaukriHomePageControls{
 	
 	//Set Path for chrome driver
 	public static WebDriver naukri;

@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -6,15 +8,18 @@ import org.testng.annotations.Test;
 
 public class TestSuite01 {
 	
+	LoginPageInputs loadInputs;
 	ProjectReusables naukri;
 	NaukriHomePageReusbales naukriHomePage;
 	NaukriLoginPageReusables naukriLoginPage;
 	NaukriRegisterPageReusbales naukriRegisterPage;
 	
 	@BeforeTest
-	public void beforeTest()
+	public void beforeTest() throws IOException
 	{
 		System.out.println("Started Test Suite 1 : TestCase01, TestCase02 & TestCase03");
+		loadInputs = new LoginPageInputs();
+		loadInputs.loadNaukriInputs();
 		naukri = new ProjectReusables();
 		naukriHomePage =  new NaukriHomePageReusbales();
 		naukriLoginPage = new NaukriLoginPageReusables();

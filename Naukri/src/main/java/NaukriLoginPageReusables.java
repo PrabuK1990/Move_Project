@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class NaukriLoginPageReusables extends ProjectReusables implements LoginPageInputs, LoginPageControls {
+public class NaukriLoginPageReusables extends ProjectReusables implements LoginPageControls, NaukriHomePageInputs, NaukriHomePageControls {
 		
 	//Enter Naukri Username/Email in Login Page
 	public void naukriEmailField()

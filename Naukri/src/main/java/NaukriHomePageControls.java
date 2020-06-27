@@ -20,5 +20,6 @@ public interface NaukriHomePageControls {
 	public static String HomePageControls_SearchButton ="//div[@class='search-btn']";
 	public static String HomePageControls_CVUploadLink ="//label[@title='Upload your CV to Register']";
 	public static String HomePageControls_AlertMessage= "//span[@class='_stepUpHeaderTitle']";
+	public static String HomePageControls_TopCompanies= "//h2[text()='Top Companies Hiring Now']";
 	
 }
