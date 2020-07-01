@@ -1,6 +1,13 @@
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.Set;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class ProjectReusables extends LoginPageInputs implements LoginPageControls, NaukriHomePageInputs, NaukriHomePageControls{
 	
@@ -54,6 +61,25 @@ public class ProjectReusables extends LoginPageInputs implements LoginPageContro
 	{
 		naukri.close();
 	}
+	
+	//Current Browser CLose
+	public void closeCurrentBrowser() throws AWTException
+	{
+		// Create Robot class
+		   Robot rb = new Robot();
+
+		   // Press control keyboard key
+		   rb.keyPress(KeyEvent.VK_CONTROL);
+
+		   // Press A keyboard key
+		   rb.keyPress(KeyEvent.VK_W);
+		   
+		   rb.keyRelease(KeyEvent.VK_CONTROL);
+		   
+		// Press A keyboard key
+		   rb.keyRelease(KeyEvent.VK_W);
+	}
+	
 	
 	//Close All Browser Instance Opened
 	public void closeAllBrowser()

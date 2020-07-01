@@ -9,8 +9,10 @@ public interface NaukriHomePageControls {
 	public static String HomePageControls_MobileNumberField = "//input[@placeholder='Where recruiter can contact you']";
 	public static String HomePageControls_RegisterNowButton= "//button[@name='basicDetailSubmit']";
 	public static String HomePageControls_CareerButtonLink= "//a[@href='/step-up-job-opportunities-during-coronavirus-covid-19']";
-	public static String HomePageControls_JobsLink= "//a[@href='https://www.naukri.com/browse-jobs']";
-	public static String HomePageControls_RecuritersLink= "//a[@title='Search Recruiters']";
+	public static String HomePageControls_JobsLink = "//a[@href='https://www.naukri.com/browse-jobs']";
+	public static String HomePageControls_SearchJobsLink = "//a[@title='Search Jobs']";
+	public static String HomePageControls_AdvancedSearchLink = "//a[@title='Advanced Search']";
+	public static String HomePageControls_RecuritersLink = "//a[@title='Search Recruiters']";
 	public static String HomePageControls_CompanysLink ="//a[@title='Jobs Posted By Top Companies']";
 	public static String HomePageControls_ToolLink ="//a[@href='https://insights.naukri.com']";
 	public static String HomePageControls_ServiceLink ="//a[@title='Naukri FastForward- Resume Services']";

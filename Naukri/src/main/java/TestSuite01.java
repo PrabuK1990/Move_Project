@@ -39,8 +39,15 @@ public class TestSuite01 {
 	@Test (priority=1)
 	public void testCase01()
 	{
-		System.out.println("Scenario 1 : To Verify the naukri Url");
-		System.out.println("Naukri Url has been entered successfully");
+		System.out.println("Scenario 1 : To Verify the naukri Login Combination Error Message Validation");
+		naukriHomePage.naukriLoginLink();
+		naukri.waitElement();
+		naukriLoginPage.naukriEmailField();
+		naukriLoginPage.naurkiPasswordField();
+		naukriLoginPage.naukriLoginButton();
+		naukri.waitElement();
+		naukriLoginPage.naukriLoginErrMsg();
+		System.out.println("Naukri Login Combination Error Message Validation has been Verified successfully");
 	}
 	
 	@Test (priority=2)
@@ -58,7 +65,7 @@ public class TestSuite01 {
 	@Test (priority=3)
 	public void testCase03()
 	{
-		System.out.println("Scenario 3 : To Verify the Naukri Login Functionality");
+		System.out.println("Scenario 3 : To Verify the Naukri Login Error Message Validation");
 		naukriHomePage.naukriLoginLink();
 		naukri.waitElement();
 		naukriLoginPage.naukriLoginButton();

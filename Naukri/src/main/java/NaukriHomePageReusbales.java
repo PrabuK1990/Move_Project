@@ -1,6 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class NaukriHomePageReusbales extends ProjectReusables implements NaukriHomePageInputs, NaukriHomePageControls{
 	
@@ -63,10 +65,41 @@ public class NaukriHomePageReusbales extends ProjectReusables implements NaukriH
 	}
 	
 	//Click Jobs Link in Home Page
-	public void naukriJobsLink()
+	public void clicknaukriJobsLink()
 	{
 		naukri.findElement(By.xpath(HomePageControls_JobsLink)).click();
 	}	
+	
+	//Mouse Hover Jobs Link in Home Page
+	public void mousehowerNaukriJobsLink()
+	{
+		Actions actions = new Actions(naukri);
+		WebElement mousehoverJobLink = naukri.findElement(By.xpath(HomePageControls_JobsLink));
+		actions.moveToElement(mousehoverJobLink).perform();
+	}	
+	
+	//Click Search Jobs Link in Home Page
+	public void clicknaukriSearchJobsLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_SearchJobsLink)).click();
+	}	
+	
+	//Click Alert Later Pop-up
+	public void clicknaukriAlertLater()
+	{
+		WebElement alertLater = naukri.findElement(By.id("block"));
+		if(alertLater.isDisplayed() == true)
+		{
+			alertLater.click();
+		}	
+	}
+	
+	//Click Search Jobs Link in Home Page
+	public void clicknaukriAdvancedSearchLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_AdvancedSearchLink)).click();
+	}
+	
 	//Click Recuriters Link in Home Page
 	public void naukriRecuriterLink()
 	{
