@@ -78,48 +78,177 @@ public class NaukriHomePageReusbales extends ProjectReusables implements NaukriH
 		actions.moveToElement(mousehoverJobLink).perform();
 	}	
 	
-	//Click Search Jobs Link in Home Page
-	public void clicknaukriSearchJobsLink()
-	{
-		naukri.findElement(By.xpath(HomePageControls_SearchJobsLink)).click();
-	}	
-	
 	//Click Alert Later Pop-up
-	public void clicknaukriAlertLater()
+	public void pageRefresh()
 	{
-		WebElement alertLater = naukri.findElement(By.id("block"));
+		naukri.navigate().refresh();
+		/*WebElement alertLater = naukri.findElement(By.id("block"));
 		if(alertLater.isDisplayed() == true)
 		{
+			System.out.println("Alert Message Displayed");
 			alertLater.click();
+			System.out.println("Clicked Later Button");
 		}	
+		
+		else if(alertLater.isDisplayed() == false)
+		{
+			System.out.println("No Alert Message Displayed");
+		}*/
 	}
 	
-	//Click Search Jobs Link in Home Page
-	public void clicknaukriAdvancedSearchLink()
+	//Common Function to click all sub menu links
+	public void clicknaukriAllSubMenuLinks(String subMenuLink)
 	{
-		naukri.findElement(By.xpath(HomePageControls_AdvancedSearchLink)).click();
+		//System.out.println(subMenuLink);
+		naukri.findElement(By.xpath(subMenuLink)).click();
 	}
 	
+	//Click Jobs By Company In Home Page
+	public void clickFindJobsByCompany()
+	{
+		naukri.findElement(By.xpath(HomePageControls_JobsByCompanyLink)).click();
+	}	
+	//Click Jobs Link In Nukri Home Page
+	public void naukriJobsBycategory()
+	{
+		naukri.findElement(By.xpath(HomePageControls_JobsByCategory)).click();
+	}
+	//Click BrowseAllJobs In naukri Home Page
+	public void naukriBrowseAllJobs()
+	{
+		naukri.findElement(By.xpath(HomePageControls_BrowseAllJobs)).click();
+	}
 	//Click Recuriters Link in Home Page
 	public void naukriRecuriterLink()
 	{
 		naukri.findElement(By.xpath(HomePageControls_RecuritersLink)).click();
-	}	
+	}
+	//Click Browse All Recruiters Link in Home Page
+	public void clicknaukriBrowseAllRecruitersLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_BrowseAllRecruiters)).click();
+	}
+	//Click Recruiters Connection Link in Home Page
+	public void clicknaukriRecruitersConnectionLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_RecruitersConnectionLink)).click();
+	}
+	//Click Go to  Naukri Recruiters Link in Home Page
+	public void clickGotoNaukriRecruitersLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_GoToNaukriRecruiterLink)).click();
+	}
 	//Click Companies Link in Home Page	
 	public void naukariCompanysLink()
 	{
 		naukri.findElement(By.xpath(HomePageControls_CompanysLink)).click();
-	}	
+	}
+	//Click Browse All Companies Link In Home Page
+	public void naukriBrowseAllCompaniesLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_BrowseAllCompaniesLink)).click();
+	}
+	//Click About  Companies Link In Home Page
+	public void naukriAboutCompaniesLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_AboutCompaniesLink)).click();
+	}
+	//Click Interview Questions Link In Home Page
+	public void naukriInterviewQuestionsLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_InterviewQuestionsLink)).click();
+	}
+	//Click  Companies Review Link Link In Home Page
+	public void naukriCompaniesReviewLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_CompaniesReviewLink)).click();
+	}
+	//Click Browse All Companies Link In Home Page
+	public void naukriLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_InterviewAdviceLink)).click();
+	}
+	//Click Browse All Companies Link In Home Page
+	public void naukriCompanieReviewLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_CompanyReview)).click();
+	}
 	//Click Tools Link in Home Page	
 	public void naukariToolLink()
 	{
 		naukri.findElement(By.xpath(HomePageControls_ToolLink)).click();
+	}
+	//Click Salary Trends Link in Home Page	
+	public void naukariSalaryTrendsLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_SalaryTrendsLink)).click();
 	}	
+	//Click Carrer Navigator Link in Home Page	
+	public void naukariCarrerNavigatorLink()
+	{
+	   naukri.findElement(By.xpath(HomePageControls_CarrerNavigatorlLink)).click();
+	}	
+	//Click People Flow Link in Home Page	
+	public void naukariPeopleFlowLink()
+	{
+	 	naukri.findElement(By.xpath(HomePageControls_PeopleFlowLink)).click();
+	}	
+	//Click Talent Migration Link in Home Page	
+	public void naukariTalentMigrationLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_TalentMigrationLink)).click();
+	}	
+	//Click SalaryPrediction Link in Home Page	
+	public void naukariSalaryPredictionLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_SalaryPredictionLink)).click();
+	}	
+	//Click Find MyAlumni Link in Home Page	
+	public void naukariFindMyAlumniLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_FindMyAlumniLink)).click();
+	}	
+	//Click Carrer Trajectory Link in Home Page	
+	public void naukariCareerTrajectoryLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_CareertrajectoryLink)).click();
+	}	
+	//Click Tools Link in Home Page	
+	public void naukariBoomerangLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_BoomerangLink)).click();
+	}	
+	//Click Services Link in Home Page
+	/*public void naukariServiceLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_ServiceLink)).click();
+	}
 	//Click Services Link in Home Page
 	public void naukariServiceLink()
 	{
 		naukri.findElement(By.xpath(HomePageControls_ServiceLink)).click();
-	}	
+	}
+	//Click Services Link in Home Page
+	public void naukariServiceLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_ServiceLink)).click();
+	}
+	//Click Services Link in Home Page
+	public void naukariServiceLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_ServiceLink)).click();
+	}
+	//Click Services Link in Home Page
+	public void naukariServiceLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_ServiceLink)).click();
+	}
+	//Click Services Link in Home Page
+	public void naukariServiceLink()
+	{
+		naukri.findElement(By.xpath(HomePageControls_ServiceLink)).click();
+	}*/
+	
 	//Click More Link in Home Page
 	public void naukariMoreLink()
 	{
@@ -129,7 +258,7 @@ public class NaukriHomePageReusbales extends ProjectReusables implements NaukriH
 	public void naukriLoginLink()
 	{
 		naukri.findElement(By.xpath(LoginPageControls_LoginLink)).click();
-	}	
+	}
 	//Enter Designation Text in Home Page
 	public void naukriDesignationText()
 	{

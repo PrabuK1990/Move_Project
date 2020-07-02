@@ -3,15 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestSuite01">
+      <class name="TestSuite_JobSubLinks">
         <methods>
-          <include name="testCase01"/>
+          <include name="testCase07"/>
           <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
+          <include name="testCase06"/>
+          <include name="testCase03"/>
+          <include name="testCase05"/>
+          <include name="testCase02"/>
+          <include name="testCase04"/>
+          <include name="testCase01"/>
         </methods>
-      </class> <!-- TestSuite01 -->
+      </class> <!-- TestSuite_JobSubLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
