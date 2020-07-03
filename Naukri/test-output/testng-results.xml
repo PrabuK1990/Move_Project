@@ -1,105 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="7" passed="7">
+<testng-results skipped="5" failed="0" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74023" started-at="2020-07-02T15:14:51Z" finished-at="2020-07-02T15:16:05Z">
+  <suite name="Default suite" duration-ms="18426" started-at="2020-07-03T11:19:01Z" finished-at="2020-07-03T11:19:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74023" started-at="2020-07-02T15:14:51Z" finished-at="2020-07-02T15:16:05Z">
-      <class name="TestSuite_JobSubLinks">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="beforeTest" is-config="true" duration-ms="17884" started-at="2020-07-02T20:44:51Z" finished-at="2020-07-02T20:45:09Z">
+    <test name="Default test" duration-ms="18426" started-at="2020-07-03T11:19:01Z" finished-at="2020-07-03T11:19:20Z">
+      <class name="TestSuite_MoreSubLinks">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="beforeTest" is-config="true" duration-ms="17093" started-at="2020-07-03T16:49:01Z" finished-at="2020-07-03T16:49:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="1555" started-at="2020-07-02T20:45:09Z" finished-at="2020-07-02T20:45:11Z">
+        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:18Z" finished-at="2020-07-03T16:49:18Z">
+          <exception class="org.openqa.selenium.JavascriptException">
+            <message>
+              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=83.0.4103.116)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VPTAQP0', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8a9444b306a12d10c129edcaea4a4ae6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=83.0.4103.116)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VPTAQP0', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8a9444b306a12d10c129edcaea4a4ae6
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at NaukriHomePageReusbales.mousehowerNaukriMoreLink(NaukriHomePageReusbales.java:113)
+	at TestSuite_MoreSubLinks.beforeMethod(TestSuite_MoreSubLinks.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase01()[pri:1, instance:TestSuite_JobSubLinks@68be2bc2]" name="testCase01" duration-ms="565" started-at="2020-07-02T20:45:11Z" finished-at="2020-07-02T20:45:11Z">
+        <test-method status="SKIP" signature="testCase01()[pri:1, instance:TestSuite_MoreSubLinks@68be2bc2]" name="testCase01" duration-ms="2" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase01 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="6069" started-at="2020-07-02T20:45:11Z" finished-at="2020-07-02T20:45:17Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="1280" started-at="2020-07-02T20:45:17Z" finished-at="2020-07-02T20:45:19Z">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase02()[pri:2, instance:TestSuite_JobSubLinks@68be2bc2]" name="testCase02" duration-ms="503" started-at="2020-07-02T20:45:19Z" finished-at="2020-07-02T20:45:19Z">
+        <test-method status="SKIP" signature="testCase02()[pri:2, instance:TestSuite_MoreSubLinks@68be2bc2]" name="testCase02" duration-ms="3" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase02 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="6021" started-at="2020-07-02T20:45:19Z" finished-at="2020-07-02T20:45:25Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="1323" started-at="2020-07-02T20:45:25Z" finished-at="2020-07-02T20:45:26Z">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase03()[pri:3, instance:TestSuite_JobSubLinks@68be2bc2]" name="testCase03" duration-ms="525" started-at="2020-07-02T20:45:26Z" finished-at="2020-07-02T20:45:27Z">
+        <test-method status="SKIP" signature="testCase03()[pri:3, instance:TestSuite_MoreSubLinks@68be2bc2]" name="testCase03" duration-ms="4" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase03 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="6009" started-at="2020-07-02T20:45:27Z" finished-at="2020-07-02T20:45:33Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="1917" started-at="2020-07-02T20:45:33Z" finished-at="2020-07-02T20:45:35Z">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase04()[pri:4, instance:TestSuite_JobSubLinks@68be2bc2]" name="testCase04" duration-ms="232" started-at="2020-07-02T20:45:35Z" finished-at="2020-07-02T20:45:35Z">
+        <test-method status="SKIP" signature="testCase04()[pri:4, instance:TestSuite_MoreSubLinks@68be2bc2]" name="testCase04" duration-ms="3" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase04 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="6021" started-at="2020-07-02T20:45:35Z" finished-at="2020-07-02T20:45:41Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="1267" started-at="2020-07-02T20:45:41Z" finished-at="2020-07-02T20:45:42Z">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase05()[pri:5, instance:TestSuite_JobSubLinks@68be2bc2]" name="testCase05" duration-ms="541" started-at="2020-07-02T20:45:42Z" finished-at="2020-07-02T20:45:43Z">
+        <test-method status="SKIP" signature="testCase05()[pri:5, instance:TestSuite_MoreSubLinks@68be2bc2]" name="testCase05" duration-ms="3" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="6011" started-at="2020-07-02T20:45:43Z" finished-at="2020-07-02T20:45:49Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="1319" started-at="2020-07-02T20:45:49Z" finished-at="2020-07-02T20:45:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase06()[pri:6, instance:TestSuite_JobSubLinks@68be2bc2]" name="testCase06" duration-ms="309" started-at="2020-07-02T20:45:50Z" finished-at="2020-07-02T20:45:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase06 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="6021" started-at="2020-07-02T20:45:51Z" finished-at="2020-07-02T20:45:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="beforeMethod" is-config="true" duration-ms="1222" started-at="2020-07-02T20:45:57Z" finished-at="2020-07-02T20:45:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testCase07()[pri:7, instance:TestSuite_JobSubLinks@68be2bc2]" name="testCase07" duration-ms="587" started-at="2020-07-02T20:45:58Z" finished-at="2020-07-02T20:45:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase07 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="afterMethod" is-config="true" duration-ms="6012" started-at="2020-07-02T20:45:58Z" finished-at="2020-07-02T20:46:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestSuite_JobSubLinks@68be2bc2]" name="afterTest" is-config="true" duration-ms="769" started-at="2020-07-02T20:46:04Z" finished-at="2020-07-02T20:46:05Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:TestSuite_MoreSubLinks@68be2bc2]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-07-03T16:49:20Z" finished-at="2020-07-03T16:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- TestSuite_JobSubLinks -->
+      </class> <!-- TestSuite_MoreSubLinks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
